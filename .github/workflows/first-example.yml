@@ -13,7 +13,7 @@ jobs:
              ls
              cat README.md
           - name: generate ASCI artwork
-            run: cowsay -f dragon "run for your life" >> cow.txt
+            run: cowsay -f dragon "run for your life" >> cat.txt
 
           # - name: list the file
           #   run: ls
