@@ -8,11 +8,16 @@ jobs:
             uses: actions/checkout@v4
 
           - name: welcome message
-            run: echo "my sample github actions code"
+            run: |
+             echo "my sample github actions code"
+             ls
+             cat README.MD
+          - name: generate ASCI artwork
+            run: cowsay -f dragon "run for your life" >> dragon.txt
 
-          - name: list the file
-            run: ls
+          # - name: list the file
+          #   run: ls
 
-          - name: read the flie
-            run: cat README.md
+          # - name: read the flie
+          #   run: cat README.md
 
