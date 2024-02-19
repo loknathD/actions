@@ -11,7 +11,7 @@ jobs:
             run: |
              echo "my sample github actions code"
              ls
-             cat README.MD
+             cat README.md
           - name: generate ASCI artwork
             run: cowsay -f dragon "run for your life" >> cow.txt
 
