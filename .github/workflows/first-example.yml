@@ -9,10 +9,10 @@ jobs:
 
           - name: welcome message
             run: echo "my sample github actions code"
-            
+
           - name: list the file
             run: ls
 
-       # - name: read the flie
-       #   run: cat README.md
+          - name: read the flie
+            run: cat README.md
 
