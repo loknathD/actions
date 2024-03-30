@@ -29,4 +29,6 @@ jobs: #can define multiple jobs in a single workflow file.
         echo "mo pelo bahut bada"
         ls -altr
         cat README.md
-        
+        sudo apt install nginx -y 
+    #any librabry which is not installed can be intalled with apt command.
+    
