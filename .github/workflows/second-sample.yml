@@ -6,6 +6,10 @@ jobs: #can define multiple jobs in a single workflow file.
  first_job: #jobname name could be anything
     runs-on: ubuntu-latest
     steps:
+    - name: including the checkout action
+      uses: actions/checkout@v4 # copied form the actions # when use any actions instaed of run
+      # we will mention uses
+
     - name: step1
       run: echo "my step 1 is executing"
 
@@ -14,3 +18,6 @@ jobs: #can define multiple jobs in a single workflow file.
     
     - name: step3
       run: cat README.md
+#this will fail the pipeline because this sction does not have access to the readme.md so to gain the action
+# we will copy the repo content to our workflow to do that
+# go to git hub market place in google and in marketplace search for checkout and include that
