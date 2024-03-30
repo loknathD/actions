@@ -3,7 +3,7 @@ name: multiple-jobs
 on: push
 
 jobs:
-    build_job_1:
+    build-job-1:
         runs-on: ubuntu-latest
         steps:
         - name: install nginx
@@ -11,10 +11,15 @@ jobs:
         
         - name: sleep for 30 secs
           run: sleep 30
-    build-job-2:
+    test-job-2:
+        needs: build-job-1 # this will execute only when the 1st job pass
         runs-on: ubuntu-latest # could be any os windows or mac-os
         steps:
         - name: sample output
           run: echo deploying.....
 
 #every jobs will run in its own virtual machine, like ubuntu,mac or windows
+#this will run the both jobs paralally but if any 1 job failed entire piplilne would marked as failed
+#we want to run the job one after anotherl so to do that we will use "needs"
+# we can also use array of jobs if required
+# like = needs: [build-job-1,test-job-2]
