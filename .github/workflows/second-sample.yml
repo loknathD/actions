@@ -21,3 +21,12 @@ jobs: #can define multiple jobs in a single workflow file.
 #this will fail the pipeline because this sction does not have access to the readme.md so to gain the action
 # we will copy the repo content to our workflow to do that
 # go to git hub market place in google and in marketplace search for checkout and include that
+
+#instead of using 3 runs we can have one  like this
+
+    - name: writting with singl line
+      run: | #this pipe is used to run in a single step
+        echo "mo pelo bahut bada"
+        ls -altr
+        cat README.md
+        
