@@ -36,4 +36,4 @@ jobs: #can define multiple jobs in a single workflow file.
 #lesson-1
 #we can write a shell script outside of our yml file and refer it into tis yml
     - name: passing svhell script path
-      run: ./hello.sh
+      run: /home/runner/work/actions/actions/hello.sh
