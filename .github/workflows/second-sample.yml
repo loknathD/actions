@@ -33,7 +33,12 @@ jobs: #can define multiple jobs in a single workflow file.
         pwd
     #any librabry which is not installed can be intalled with apt command.
 
-#lesson-1
+#Topic-1
 #we can write a shell script outside of our yml file and refer it into tis yml
-    - name: passing svhell script path
-      run: /home/runner/work/actions/actions/hello.sh
+    #- name: passing svhell script path
+    # run: /home/runner/work/actions/actions/hello.sh
+#need to debug this as build is failing saying hello.sh not found
+
+#Topic-2
+#workflow wth multiple jobs
+
