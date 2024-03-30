@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: install nginx
-          run: sudo apt update nginx -y
+          run: sudo apt install nginx -y
         
         - name: sleep for 30 secs
           run: sleep 30
