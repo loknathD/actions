@@ -30,6 +30,7 @@ jobs: #can define multiple jobs in a single workflow file.
         ls -altr
         cat README.md
         sudo apt install nginx -y 
+        pwd
     #any librabry which is not installed can be intalled with apt command.
 
 #lesson-1
